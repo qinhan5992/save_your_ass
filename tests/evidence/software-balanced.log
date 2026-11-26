@@ -1,0 +1,168 @@
+{
+  "label": "software-balanced",
+  "elapsed_wall_s": 60.003142501999946,
+  "counts": {
+    "map": 61,
+    "clock": 9847,
+    "odom": 494,
+    "camera": 99,
+    "scan": 99
+  },
+  "wall_hz": {
+    "map": 1.0166134215048293,
+    "clock": 164.1080715009517,
+    "odom": 8.2329021348096,
+    "camera": 1.6499135857209521,
+    "scan": 1.6499135857209521
+  },
+  "first": {
+    "map": {
+      "stamp": 4.031,
+      "width": 72,
+      "height": 40,
+      "frame": "map"
+    },
+    "clock": 4.17,
+    "odom": {
+      "stamp": 4.14,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": 6.415169019683028e-16,
+      "y": 2.197762953278666e-29,
+      "yaw": -1.843046475449619e-16
+    },
+    "camera": {
+      "stamp": 4.2,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    },
+    "scan": {
+      "stamp": 4.2,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.40501564741134644,
+      "max": 2.695244789123535,
+      "front": 1.835871934890747
+    }
+  },
+  "last": {
+    "map": {
+      "stamp": 13.814,
+      "width": 72,
+      "height": 40,
+      "frame": "map"
+    },
+    "clock": 14.016,
+    "odom": {
+      "stamp": 14.0,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -2.1992463708429053e-19,
+      "y": 2.2279124108649834e-29,
+      "yaw": 7.403312486481197e-20
+    },
+    "camera": {
+      "stamp": 14.0,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    },
+    "scan": {
+      "stamp": 14.0,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.4086860120296478,
+      "max": 2.7027297019958496,
+      "front": 1.8289448022842407
+    }
+  },
+  "unique_scans": 99,
+  "odom_path_m": 5.17982173893601e-15,
+  "image_processing": {
+    "opencv": "4.5.4",
+    "shape": [
+      240,
+      320,
+      3
+    ],
+    "mean_bgr": [
+      210.69309895833334,
+      210.69309895833334,
+      210.69309895833334
+    ],
+    "saturated_pixels": 0
+  },
+  "map": {
+    "known": 1401,
+    "occupied": 188,
+    "free": 0,
+    "resolution": 0.05000000074505806,
+    "origin": [
+      -0.8,
+      -1.25
+    ]
+  },
+  "transforms": {
+    "map -> odom": {
+      "xyz": [
+        0.024242903125487852,
+        -0.005937989792863954,
+        -0.068
+      ],
+      "stamp": 14.016
+    },
+    "odom -> base_footprint": {
+      "xyz": [
+        -2.1992463708429053e-19,
+        2.2279124108649834e-29,
+        0.0
+      ],
+      "stamp": 14.0
+    },
+    "base_footprint -> base_link": {
+      "xyz": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> base_scan": {
+      "xyz": [
+        -0.064,
+        0.0,
+        0.111
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_link": {
+      "xyz": [
+        0.073,
+        -0.011,
+        0.07400000000000001
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_rgb_frame": {
+      "xyz": [
+        0.079,
+        0.011,
+        0.092
+      ],
+      "stamp": 0.0
+    },
+    "map -> base_link": {
+      "xyz": [
+        0.024242903125487852,
+        -0.005937989792863954,
+        -0.058
+      ],
+      "stamp": 14.0
+    }
+  },
+  "errors": [],
+  "observed_real_time_factor": 0.16409140570715652
+}

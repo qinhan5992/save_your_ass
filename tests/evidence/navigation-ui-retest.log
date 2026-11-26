@@ -1,0 +1,155 @@
+Course simulation stopped.
+Starting navigation with balanced profile. Logs: /home/student/COMP3431/logs/20260912-095317-80a210
+{
+  "passed": true,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "graphics_context": true,
+    "live_clock": true,
+    "live_scan": true,
+    "live_odom": true,
+    "live_camera": true,
+    "tf_odom_base_footprint": 1,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "graphics": "name of display: :1\ndisplay: :1  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0xffffffff)\n    Device: llvmpipe (LLVM 15.0.7, 128 bits) (0xffffffff)\n    Version: 23.2.1\n    Accelerated: no\n    Video memory: 5912MB\n    Unified memory: yes\n    Preferred profile: core (0x1)\n    Max core profile version: 4.5\n    Max compat profile version: 4.5\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.2\nMemory info (GL_ATI_meminfo):\n    VBO free memory - total: 63 MB, largest block: 63 MB\n    VBO free aux. memory - total: 3872 MB, largest block: 3872 MB\n    Texture free memory - total: 63 MB, largest block: 63 MB\n    Texture free aux. memory - total: 3872 MB, largest block: 3872 MB\n    Renderbuffer free memory - total: 63 MB, largest block: 63 MB\n    Renderbuffer free aux. memory - total: 3872 MB, largest block: 3872 MB\nMemory info (GL_NVX_gpu_memory_info):\n    Dedicated video memory: 4294285661 MB\n    Total available memory: 4294291573 MB\n    Currently available dedicated video memory: 63 MB\nOpenGL vendor string: Mesa\nOpenGL renderer string: llvmpipe (LLVM 15.0.7, 128 bits)\nOpenGL core profile version string: 4.5 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL core profile shading language version string: 4.50\nOpenGL core profile context flags: (none)\nOpenGL core profile profile mask: core profile\n\nOpenGL version string: 4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL shading language version string: 4.50\nOpenGL context flags: (none)\nOpenGL profile mask: compatibility profile\n\nOpenGL ES profile version string: OpenGL ES 3.2 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20",
+    "known_map_cells": 2920,
+    "image_shape": [
+      240,
+      320,
+      3
+    ],
+    "scan_min": 0.41237494349479675,
+    "scan_max": 2.7134106159210205,
+    "scan_beams": 360,
+    "message_counts": {
+      "clock": 233,
+      "odom": 13,
+      "map": 1,
+      "camera": 3,
+      "scan": 3
+    },
+    "elapsed_seconds": 4.705328035999855
+  }
+}
+Ready. In RViz set 2D Pose Estimate, then use Nav2 Goal. Initial pose is required.
+ACTIVE_LIFECYCLE {"map_server": "active", "amcl": "active", "controller_server": "active", "planner_server": "active", "bt_navigator": "active"}
+GOAL_ACCEPTED {"x": 0.5750000212341546, "y": -0.0749999824911356, "clearance_m": 0.4893798828125, "grid_path_steps": 12}
+{
+  "states": {
+    "map_server": "active",
+    "amcl": "active",
+    "controller_server": "active",
+    "planner_server": "active",
+    "bt_navigator": "active"
+  },
+  "action_status": 4,
+  "elapsed_wall_s": 24.861155944000075,
+  "goal": {
+    "x": 0.5750000212341546,
+    "y": -0.0749999824911356,
+    "clearance_m": 0.4893798828125,
+    "grid_path_steps": 12
+  },
+  "final_position": [
+    0.3415582056241313,
+    -0.031713644686298136
+  ],
+  "position_error_m": 0.23742112019754819
+}
+NAVIGATION_RVIZ_ALIVE_PASS
+Starting navigation with balanced profile. Logs: /home/student/COMP3431/logs/20260912-095412-338f13
+{
+  "passed": true,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "graphics_context": true,
+    "live_clock": true,
+    "live_scan": true,
+    "live_odom": true,
+    "live_camera": true,
+    "tf_odom_base_footprint": 1,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "graphics": "name of display: :1\ndisplay: :1  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0xffffffff)\n    Device: llvmpipe (LLVM 15.0.7, 128 bits) (0xffffffff)\n    Version: 23.2.1\n    Accelerated: no\n    Video memory: 5912MB\n    Unified memory: yes\n    Preferred profile: core (0x1)\n    Max core profile version: 4.5\n    Max compat profile version: 4.5\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.2\nMemory info (GL_ATI_meminfo):\n    VBO free memory - total: 63 MB, largest block: 63 MB\n    VBO free aux. memory - total: 3875 MB, largest block: 3875 MB\n    Texture free memory - total: 63 MB, largest block: 63 MB\n    Texture free aux. memory - total: 3875 MB, largest block: 3875 MB\n    Renderbuffer free memory - total: 63 MB, largest block: 63 MB\n    Renderbuffer free aux. memory - total: 3875 MB, largest block: 3875 MB\nMemory info (GL_NVX_gpu_memory_info):\n    Dedicated video memory: 4294042794 MB\n    Total available memory: 4294048707 MB\n    Currently available dedicated video memory: 63 MB\nOpenGL vendor string: Mesa\nOpenGL renderer string: llvmpipe (LLVM 15.0.7, 128 bits)\nOpenGL core profile version string: 4.5 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL core profile shading language version string: 4.50\nOpenGL core profile context flags: (none)\nOpenGL core profile profile mask: core profile\n\nOpenGL version string: 4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL shading language version string: 4.50\nOpenGL context flags: (none)\nOpenGL profile mask: compatibility profile\n\nOpenGL ES profile version string: OpenGL ES 3.2 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20",
+    "known_map_cells": 2920,
+    "image_shape": [
+      240,
+      320,
+      3
+    ],
+    "scan_min": 0.41268661618232727,
+    "scan_max": 2.691133975982666,
+    "scan_beams": 360,
+    "message_counts": {
+      "clock": 230,
+      "map": 1,
+      "odom": 12,
+      "camera": 3,
+      "scan": 3
+    },
+    "elapsed_seconds": 5.183301702000108
+  }
+}
+Ready. In RViz set 2D Pose Estimate, then use Nav2 Goal. Initial pose is required.
+ACTIVE_LIFECYCLE {"map_server": "active", "amcl": "active", "controller_server": "active", "planner_server": "active", "bt_navigator": "active"}
+GOAL_ACCEPTED {"x": 0.5750000212341546, "y": -0.0749999824911356, "clearance_m": 0.4893798828125, "grid_path_steps": 12}
+{
+  "states": {
+    "map_server": "active",
+    "amcl": "active",
+    "controller_server": "active",
+    "planner_server": "active",
+    "bt_navigator": "active"
+  },
+  "action_status": 4,
+  "elapsed_wall_s": 28.66200237099997,
+  "goal": {
+    "x": 0.5750000212341546,
+    "y": -0.0749999824911356,
+    "clearance_m": 0.4893798828125,
+    "grid_path_steps": 12
+  },
+  "final_position": [
+    0.34130475691907214,
+    -0.030500138476642052
+  ],
+  "position_error_m": 0.2378943309131399
+}
+NAVIGATION_RVIZ_ALIVE_PASS
+Course simulation stopped.
+NAVIGATION_UI_RETEST_PASS

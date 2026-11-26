@@ -1,0 +1,30 @@
+Starting >>> dynamixel_sdk
+Finished <<< dynamixel_sdk [1.22s]
+Starting >>> dynamixel_sdk_custom_interfaces
+Finished <<< dynamixel_sdk_custom_interfaces [2.37s]
+Starting >>> turtlebot3_cartographer
+Finished <<< turtlebot3_cartographer [0.37s]
+Starting >>> turtlebot3_description
+Finished <<< turtlebot3_description [0.41s]
+Starting >>> turtlebot3_gazebo
+Finished <<< turtlebot3_gazebo [0.80s]
+Starting >>> turtlebot3_msgs
+Finished <<< turtlebot3_msgs [5.25s]
+Starting >>> turtlebot3_navigation2
+Finished <<< turtlebot3_navigation2 [0.40s]
+Starting >>> turtlebot3_teleop
+Finished <<< turtlebot3_teleop [0.50s]
+Starting >>> wall_follower
+Finished <<< wall_follower [6.05s]
+Starting >>> dynamixel_sdk_examples
+Finished <<< dynamixel_sdk_examples [4.29s]
+Starting >>> turtlebot3_example
+Finished <<< turtlebot3_example [0.42s]
+Starting >>> turtlebot3_node
+Finished <<< turtlebot3_node [13.8s]
+Starting >>> turtlebot3_bringup
+Finished <<< turtlebot3_bringup [0.39s]
+Starting >>> turtlebot3
+Finished <<< turtlebot3 [0.39s]
+
+Summary: 14 packages finished [37.0s]

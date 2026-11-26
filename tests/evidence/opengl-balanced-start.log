@@ -1,0 +1,62 @@
+name of display: :1
+display: :1  screen: 0
+direct rendering: Yes
+Extended renderer info (GLX_MESA_query_renderer):
+    Vendor: Mesa (0x1af4)
+    Device: virgl (ANGLE (Apple, Apple M5 Pro, OpenGL 4.1 Metal - 90.5)) (0x1010)
+    Version: 23.2.1
+    Accelerated: yes
+    Video memory: 0MB
+    Unified memory: no
+    Preferred profile: compat (0x2)
+    Max core profile version: 0.0
+    Max compat profile version: 2.1
+    Max GLES1 profile version: 1.1
+    Max GLES[23] profile version: 3.0
+OpenGL vendor string: Mesa
+OpenGL renderer string: virgl (ANGLE (Apple, Apple M5 Pro, OpenGL 4.1 Metal - 90.5))
+OpenGL version string: 2.1 Mesa 23.2.1-1ubuntu3.1~22.04.3
+OpenGL shading language version string: 1.20
+
+OpenGL ES profile version string: OpenGL ES 3.0 Mesa 23.2.1-1ubuntu3.1~22.04.3
+OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.00
+
+Starting mapping with balanced profile. Logs: /home/student/COMP3431/logs/20260912-092256-9b5988
+{
+  "passed": false,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "graphics_context": true,
+    "live_clock": false,
+    "live_scan": false,
+    "live_odom": false,
+    "live_camera": false,
+    "nonempty_map": false,
+    "tf_odom_base_footprint": 0,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1,
+    "tf_map_base_footprint": 0
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "graphics": "name of display: :1\ndisplay: :1  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0x1af4)\n    Device: virgl (ANGLE (Apple, Apple M5 Pro, OpenGL 4.1 Metal - 90.5)) (0x1010)\n    Version: 23.2.1\n    Accelerated: yes\n    Video memory: 0MB\n    Unified memory: no\n    Preferred profile: compat (0x2)\n    Max core profile version: 0.0\n    Max compat profile version: 2.1\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.0\nOpenGL vendor string: Mesa\nOpenGL renderer string: virgl (ANGLE (Apple, Apple M5 Pro, OpenGL 4.1 Metal - 90.5))\nOpenGL version string: 2.1 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL shading language version string: 1.20\n\nOpenGL ES profile version string: OpenGL ES 3.0 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.00",
+    "message_counts": {},
+    "elapsed_seconds": 25.045211812000005
+  }
+}
+ERROR: Startup health check failed. The session was stopped; its logs are preserved.
+FAIL: no scan

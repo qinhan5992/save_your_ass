@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-AU"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMP3431 — Start here · UTM on Apple Silicon</title>
+<style>
+:root{color-scheme:light;--ink:#16283b;--blue:#1553a3;--muted:#506174}
+*{box-sizing:border-box}html{scroll-padding-top:5rem}
+body{margin:0;color:var(--ink);background:#f5f7fa;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:890px;margin:auto;padding:42px 26px 70px}header{padding:0 6px 24px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+h1{font-size:42px;line-height:1.12;letter-spacing:-.035em;margin:12px 0 18px}header p{max-width:700px;margin:10px 0}
+.intro{font-size:20px}.summary{color:var(--muted);font-size:15px}
+nav{position:sticky;top:0;z-index:1;background:#f5f7faf5;padding:12px 0;display:flex;gap:10px;flex-wrap:wrap;border-bottom:1px solid #dbe3ed}
+nav a{background:white;border:1px solid #bdcde0;border-radius:7px;padding:7px 14px;text-decoration:none;font-size:15px;font-weight:650}
+a{color:var(--blue);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #ecad20;outline-offset:4px}
+section{background:white;border:1px solid #dbe3ed;border-radius:12px;padding:28px 34px;margin-top:24px}
+h2{font-size:28px;line-height:1.25;letter-spacing:-.02em;margin:0 0 18px}h3{font-size:21px;line-height:1.35;margin:32px 0 10px}
+p{margin:12px 0}li{margin:8px 0}code{font: .88em/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;background:#edf2f8;border-radius:4px;padding:2px 5px;overflow-wrap:anywhere}
+pre{background:#edf2f8;border:1px solid #dbe3ed;border-left:4px solid var(--blue);border-radius:6px;padding:15px 18px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+pre code{padding:0;background:none}.back{font-size:14px;margin-top:28px}footer{padding:28px 6px 0;color:var(--muted);font-size:14px}
+@media(max-width:600px){main{padding:24px 14px 42px}h1{font-size:34px}section{padding:22px 20px}h2{font-size:25px}nav a{padding:7px 10px;font-size:14px}}
+@media print{body{background:white;font-size:11pt}main{max-width:none;padding:0}nav,.back{display:none}section{border:0;padding:0;margin:25px 0}pre{break-inside:avoid}}
+</style></head><body><main id="top">
+<header><div class="eyebrow">COMP3431 · UTM on Apple Silicon Macs</div>
+<h1>Your course computer, ready to open.</h1>
+<p class="intro">Install UTM, sign in to Ubuntu, then run your first robot simulation. The course software is already installed.</p>
+<p class="summary"><strong>Before you start:</strong> an Apple M-series Mac, preferably 16 GB memory or more, and at least 50 GB free disk space. No Mac programming tools are needed.</p>
+<p class="summary">Already inside Ubuntu? Go straight to <a href="#commands">Course commands</a>.</p>
+</header>
+<nav aria-label="Guide sections"><a href="#setup">1. Set up your Mac</a><a href="#commands">2. Course commands</a><a href="#help">Help</a></nav>
+<section id="setup"><h2>Set up your Mac</h2>
+<p>This package runs the course software inside <strong>Ubuntu</strong>, a Linux desktop opened through the Mac app <strong>UTM</strong>. A virtual machine (VM) is the saved Ubuntu computer. Its software is already installed; you only need to install UTM and open it.</p>
+<p>Steps 1–4 happen <strong>on your Mac</strong>. Steps 5–6 happen <strong>inside the Ubuntu window</strong>.</p>
+<h3>1. Check your Mac</h3>
+<p>Choose <strong>Apple menu → About This Mac</strong>. You need an <strong>Apple M-series chip</strong> (M1, M2, M3, M4, M5 or later). This package does not support Intel Macs.</p>
+<p>We recommend <strong>at least 16 GB memory</strong>. Allow <strong>50 GB free disk space</strong> before downloading and extracting the package, with more space later for your work and backups. Internet access is needed to download the package. No programming tools need to be installed on your Mac.</p>
+<p>Testing used an M5 Pro with 48 GB memory and macOS 26.6.2. Other Mac models still need testing. An 8 GB Mac has not been validated with these settings; ask the teaching team before installing on one.</p>
+<h3>2. Download and keep the folder in place</h3>
+<p>Download the UTM course package from the course website. It is several gigabytes, so let the download finish completely. In Finder, open <strong>Downloads</strong> and double-click the ZIP if it has not already been extracted.</p>
+<p>You should see a folder called <strong>mac-arm-setup</strong>. In Finder, choose <strong>Go → Home</strong>, create a folder called <strong>COMP3431</strong>, and move the whole <strong>mac-arm-setup</strong> folder into it. Keep it here throughout the course. Avoid iCloud, OneDrive or other cloud-sync folders for a running VM.</p>
+<p>Open <strong>mac-arm-setup</strong>. You should see <strong>START-HERE.html</strong>, <strong>start.command</strong>, <strong>backup.command</strong>, <strong>installer</strong> and <strong>vm</strong>. Do not try to run the VM from inside the ZIP.</p>
+<h3>3. Install UTM on your Mac</h3>
+<p>Open <strong>installer</strong>, then double-click <strong>UTM-4.7.5.dmg</strong>. In the window that opens, drag <strong>UTM</strong> onto <strong>Applications</strong>. Wait for the copy to finish, then eject the disk image using Finder. Open <strong>UTM</strong> from Applications once.</p>
+<p>The included installer is the official UTM 4.7.5 release used for testing. If macOS asks whether you want to open the downloaded UTM app, follow its normal Open prompt. No App Store purchase is required. If UTM is already installed, open it and check its version using <strong>UTM → About UTM</strong>; ask the teaching team if you are unsure about a different version.</p>
+<h3>4. Open the course VM and check one Mac setting</h3>
+<p>In UTM, choose <strong>File → Open</strong>, then select <strong>vm/COMP3431-Mac-ARM.utm</strong> inside your <strong>mac-arm-setup</strong> folder. The VM should appear as <strong>COMP3431 Mac ARM</strong>. Use this prepared VM; you do not need to create a new VM or install Ubuntu yourself.</p>
+<p>In the Mac menu bar, choose <strong>UTM → Settings → Display</strong> and leave <strong>Renderer Backend</strong> set to <strong>Default</strong>. This is a setting on your Mac. The VM already contains the tested processor, memory, networking and display settings; keep those settings as supplied.</p>
+<p>Select <strong>COMP3431 Mac ARM</strong> and press <strong>Play</strong>. Wait for the Ubuntu login screen. Next time, you can double-click <strong>start.command</strong> or open the VM directly in UTM.</p>
+<h3>5. Log in to Ubuntu</h3>
+<p>Click inside the Ubuntu window. Select <strong>student</strong> and enter this initial password, all lower case:</p>
+<pre><code>Username: student
+Password: comp3431</code></pre>
+<p>This password also works for <code>sudo</code> inside Ubuntu. It is separate from your Mac password. When a terminal asks for a password, no characters appear while you type; type it and press <strong>Enter</strong>.</p>
+<p>You can change your Ubuntu password by running <code>passwd</code> in an Ubuntu terminal and following the prompts. Remember your new password and use it for future logins.</p>
+<h3>6. Check your first simulation</h3>
+<p>Inside Ubuntu, open <strong>COMP3431 Terminal</strong> from the applications list, or press <strong>Ctrl–Alt–T</strong> to open Terminal. Use the Ubuntu terminal for all <code>course</code> commands. Your Mac&#x27;s Terminal is a different app and does not have the course software.</p>
+<p>Run these commands <strong>one at a time</strong>, waiting for each to finish:</p>
+<pre><code>course doctor
+course start</code></pre>
+<p>The first should print <strong>PASS</strong>. The second starts the robot simulator and opens <strong>RViz</strong>, the window showing the robot, laser readings and map. Wait for <strong>Ready</strong> in the terminal. The robot starts stationary.</p>
+<p>Start the wall follower:</p>
+<pre><code>course wall-follow</code></pre>
+<p>You should see the robot move and the map grow. Simulation can run slower than real time. To stop wall following, then close the simulation:</p>
+<pre><code>course stop-robot
+course stop</code></pre>
+<p>You are ready for the course once these checks succeed. When finished for the day, use <strong>Power Off</strong> in Ubuntu and wait until UTM shows the VM as <strong>Stopped</strong>. Closing a window alone is not the same as shutting down Ubuntu.</p>
+<p>Official help: <a href="https://docs.getutm.app/installation/macos/">Install UTM on macOS</a>.</p><p class="back"><a href="#top">Back to the top ↑</a></p></section>
+<section id="commands"><h2>Working on the course</h2>
+<p>Start the VM with <strong>start.command</strong>, sign in to Ubuntu, and open <strong>COMP3431 Terminal</strong> inside Ubuntu. Run the commands below there, one line at a time.</p>
+<h3>Start, move and stop</h3>
+<pre><code>course start
+course wall-follow
+course stop-robot
+course stop</code></pre>
+<p>These commands start the maze and mapping, start wall following, stop wall following, then close the simulation. Use them as needed. Run <code>course status</code> to check whether the simulation is running. Use <code>course reset</code> to restart the current exercise at the robot&#x27;s initial pose; saved maps and source edits are retained.</p>
+<p>For keyboard control, start the simulation and run <code>course teleop</code>. Follow the keys printed in the terminal, then press <strong>Ctrl–C</strong> to leave keyboard control.</p>
+<h3>Edit and build your code</h3>
+<p>Your code is inside Ubuntu at <strong>/home/student/COMP3431/src</strong>. The wall-following and vision examples are in <strong>src/wall_follower</strong>. Open the workspace in the installed VS Code editor:</p>
+<pre><code>code ~/COMP3431</code></pre>
+<p>Save your edits, then stop the simulation and rebuild:</p>
+<pre><code>course stop
+course build</code></pre>
+<p>Wait for the build to finish before running your code again. Open a fresh Ubuntu terminal after adding packages. Edit source files in <strong>src</strong>, not generated files in <strong>build</strong> or <strong>install</strong>.</p>
+<p>The normal <code>ros2 run</code>, <code>ros2 topic</code> and <code>ros2 node</code> commands are available. For a messaging exercise, open two Ubuntu terminals. Run <code>ros2 run demo_nodes_cpp talker</code> in one and <code>ros2 run demo_nodes_py listener</code> in the other. Press <strong>Ctrl–C</strong> in each when finished.</p>
+<h3>Camera and marker exercise</h3>
+<pre><code>course stop
+course start vision
+course wall-follow</code></pre>
+<p>Vision mode selects the 640 × 480 camera resolution expected by the supplied code. It opens a camera window and runs the marker-processing example. Finish with <code>course stop</code>.</p>
+<p>For mapping exercises that do not use the camera, <code>course start mapping --profile mapping</code> disables it. Stop the current simulation before switching modes. This option is not a guarantee of faster simulation.</p>
+<h3>Save a map</h3>
+<p>While mapping is running, stop wall following and save your map:</p>
+<pre><code>course stop-robot
+course save-map my-map</code></pre>
+<p>This creates <strong>~/COMP3431/maps/my-map.yaml</strong> and <strong>~/COMP3431/maps/my-map.pgm</strong> inside Ubuntu. Use a new name for each map you want to keep; existing maps are protected from overwrite.</p>
+<h3>Navigate with a saved map</h3>
+<pre><code>course stop
+course start navigation --map ~/COMP3431/maps/my-map.yaml</code></pre>
+<p>In RViz, select <strong>2D Pose Estimate</strong>, then click and drag at the robot&#x27;s current position and heading. Once the laser readings line up with the map, select <strong>Nav2 Goal</strong>, then click and drag at your destination. Choose a clear area of mapped floor.</p>
+<p>Use RViz to cancel an active navigation goal. <code>course stop-robot</code> stops wall following; it does not cancel a Nav2 goal. <code>course stop</code> closes the whole simulation.</p>
+<h3>Back up your work to your Mac</h3>
+<p>Save your files in Ubuntu and run <code>course stop</code>. <strong>Leave Ubuntu and the VM running.</strong> On your Mac, open <strong>mac-arm-setup</strong> in Finder and double-click <strong>backup.command</strong>.</p>
+<p>If macOS asks whether Terminal can control UTM, allow that specific Automation permission to use the backup tool. Wait for <strong>Saved:</strong> and a Finder window showing the new backup. The first backup can take a few minutes.</p>
+<p>Each backup is a new dated <strong>.tar.gz</strong> archive in <strong>student-backups</strong> beside the Mac launchers. It contains your Ubuntu <strong>src</strong>, <strong>maps</strong>, <strong>tools</strong> and <strong>config</strong> folders. It does not include arbitrary files elsewhere in Ubuntu. Check that the backup exists before shutting down. Keep another copy of important backups somewhere safe.</p>
+<p>To recover work, keep the backup archive unchanged and ask the teaching team to help extract the needed files into your Ubuntu workspace. Rebuild with <code>course build</code> after restoring source code. Do not replace the whole VM just to recover one file.</p>
+<h3>Finish your session</h3>
+<p>Run <code>course stop</code>, save and back up your work, then choose <strong>Power Off</strong> from Ubuntu&#x27;s top-right system menu. Wait for UTM to show <strong>Stopped</strong> before moving or copying the VM folder.</p>
+<p>Your work is stored inside <strong>vm/COMP3431-Mac-ARM.utm</strong>. Deleting that VM also deletes any work inside it that you have not backed up.</p><p class="back"><a href="#top">Back to the top ↑</a></p></section>
+<section id="help"><h2>Help and Mac settings</h2>
+<h3>Login details</h3>
+<p>On a fresh copy, the Ubuntu username is <strong>student</strong> and the password is <strong>comp3431</strong>, all lower case. Use your new password if you have changed it. Click inside the Ubuntu window before typing. This is separate from your Mac login.</p>
+<h3>A Mac command file will not open</h3>
+<p>To start the VM, use <strong>UTM → File → Open</strong> and select <strong>vm/COMP3431-Mac-ARM.utm</strong>.</p>
+<p>For the backup command, open Mac Terminal using <strong>Command–Space → Terminal</strong>. Type <code>zsh</code> followed by a space, drag <strong>backup.command</strong> from Finder into Terminal, then press <strong>Return</strong>. You can use the same method with <strong>start.command</strong>. No Mac security setting needs to be disabled.</p>
+<h3>“course: command not found”</h3>
+<p>Open Terminal <strong>inside Ubuntu</strong>, not on the Mac. If needed, open <strong>COMP3431 Terminal</strong> from Ubuntu&#x27;s applications list. The course software is installed inside the VM.</p>
+<h3>The robot does not move</h3>
+<p>It starts stationary. Wait for <strong>Ready</strong>, then run <code>course wall-follow</code> or <code>course teleop</code>. Do not start a second simulator in another terminal. Use <code>course stop</code> before switching exercises.</p>
+<h3>A simulation will not start</h3>
+<p>Read the error and log location printed in the Ubuntu terminal. Run <code>course stop</code>, then try <code>course start</code> once more. If it fails again, send the teaching team the error and the named log folder.</p>
+<p><code>course doctor --verbose</code> prints installation diagnostics. While a simulation is running, <code>course doctor --live --verbose</code> also checks real sensor data and transforms. The latest report is saved inside Ubuntu as <strong>~/COMP3431/logs/doctor-latest.json</strong>. Logs are not included by <strong>backup.command</strong>; keep or copy the requested diagnostic report separately for support.</p>
+<h3>Saved VM settings</h3>
+<p>The package already saves the following settings. You normally do not need to edit them:</p>
+<ul>
+<li>Apple Silicon ARM64 with hardware virtualisation.</li>
+<li><strong>4 CPU cores</strong>, <strong>6144 MB memory</strong> and a <strong>64 GB virtual disk</strong>.</li>
+<li><strong>Shared</strong> networking for local simulation.</li>
+<li>Display card <strong>virtio-ramfb</strong>, <strong>Retina mode off</strong>, automatic display resizing on.</li>
+<li>Clipboard sharing on, with Ubuntu using the <strong>Xorg</strong> desktop session.</li>
+</ul>
+<p>On each Mac, check <strong>UTM → Settings → Display → Renderer Backend: Default</strong>. This app-wide preference is not stored in the VM. Do not enable GPU acceleration for this course image. The supported display settings were checked with the simulator&#x27;s laser and camera data.</p>
+<p>If your Mac has only 8 GB memory, ask the teaching team for help. The supplied 6 GB VM allocation and a reduced 4 GB allocation have not been validated on an 8 GB Mac. Do not assign all your Mac&#x27;s memory or CPU cores to the VM.</p>
+<h3>Small desktop, black window or slow simulation</h3>
+<p>Resize the UTM window; Ubuntu should adjust its desktop. Keep Retina mode off and use a modest resolution such as <strong>1280 × 800</strong>. Ubuntu&#x27;s <strong>Settings → Displays</strong> lets you select a resolution.</p>
+<p>If you changed graphics settings, shut down Ubuntu, restore the settings above and start the VM again. A full VM shutdown is needed when changing its display hardware. Avoid force-stopping a working VM.</p>
+<p>Simulation speed varies and can be substantially slower than real time. Use the default <code>course start</code> workflow, close other heavy apps, and keep enough free memory and disk space on the Mac. The additional Gazebo 3D window is optional and can be opened with <code>course start --gui</code>. The camera-off mapping mode is available for exercises that do not need vision; its speed benefit is not established.</p>
+<p>UTM documents its <a href="https://docs.getutm.app/settings-qemu/devices/display/">display and Retina settings</a>.</p>
+<h3>Mouse or keyboard captured by UTM</h3>
+<p>Press <strong>Command–Option</strong> to release input capture. Click inside the Ubuntu window to use its apps again. Ubuntu uses <strong>Ctrl</strong> for many shortcuts where Mac apps use <strong>Command</strong>.</p>
+<h3>Backup fails</h3>
+<p>Keep the VM running, wait for Ubuntu to finish booting, and try <strong>backup.command</strong> again. Check the Mac has free disk space. If you denied Terminal permission to control UTM, review <strong>System Settings → Privacy &amp; Security → Automation</strong> on the Mac and allow Terminal to control UTM for this operation. No network share or SSH setup is required.</p>
+<p>If it still fails, retain the error and tell the teaching team. A file ending in <strong>.partial</strong> is not a completed backup; wait for the <strong>Saved:</strong> message. Do not delete the VM while trying to recover work.</p>
+<h3>What has been tested</h3>
+<p>Login and the documented password, building all 14 course packages, ROS messaging, maze sensors, mapping, wall following, vision data processing, a short navigation goal and copying work to the Mac passed on an <strong>M5 Pro, 48 GB, macOS 26.6.2</strong>, using <strong>UTM 4.7.5</strong>.</p>
+<p>Other Mac hardware, first-time installation on a second Mac, optional shared folders, physical robots and lab networking still need testing. The software is configured for simulation on this Mac. Follow the teaching team&#x27;s instructions for physical-robot sessions. Software checks do not establish the correctness of assessed student solutions.</p>
+<h3>Ask for help</h3>
+<p>Contact the teaching team through the course&#x27;s usual help channel. Include your Mac chip, memory and macOS version, the UTM version, the command or step that failed, and the full error text. For a simulation error, also include the log folder printed by the command.</p>
+<h3>Updates and removal</h3>
+<p>Back up work before updating Ubuntu or course packages, and follow the teaching team&#x27;s update instructions. Do not change Ubuntu or ROS distributions to troubleshoot an exercise.</p>
+<p>To remove the setup, back up your work, shut down Ubuntu and wait for <strong>Stopped</strong> in UTM. You can then remove the VM and its folder. Keep your backup archives if you still need the code and maps.</p><p class="back"><a href="#top">Back to the top ↑</a></p></section>
+<footer>This guide is included in the course download and opens without an internet connection. Downloading the course package requires internet access.</footer>
+</main></body></html>

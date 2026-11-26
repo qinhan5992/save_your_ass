@@ -1,0 +1,10 @@
+PASS: ROS 2 Humble, course packages and development tools are ready.
+Full diagnostic report: /home/student/COMP3431/logs/doctor-latest.json
+Starting mapping with balanced profile. Logs: /home/student/COMP3431/logs/20260912-100249-0aadfd
+Ready. The robot is stationary. Use course wall-follow or course teleop to move it.
+PASS: ROS 2 Humble, course packages and development tools are ready.
+Live sensor data and required transforms passed.
+Full diagnostic report: /home/student/COMP3431/logs/doctor-latest.json
+ERROR: A course session is already running. Use course stop or course reset.
+Course simulation stopped.
+FINAL_STUDENT_COMMANDS_PASS

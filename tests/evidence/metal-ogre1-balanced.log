@@ -1,0 +1,189 @@
+{
+  "label": "metal-ogre1-balanced",
+  "elapsed_wall_s": 60.00816894100001,
+  "counts": {
+    "clock": 8838,
+    "map": 57,
+    "odom": 442,
+    "scan": 89,
+    "camera": 89
+  },
+  "wall_hz": {
+    "clock": 147.2799479799078,
+    "map": 0.9498706760414963,
+    "odom": 7.365663838777919,
+    "scan": 1.4831314064507575,
+    "camera": 1.4831314064507575
+  },
+  "first": {
+    "clock": 4.293,
+    "map": {
+      "stamp": 4.249,
+      "width": 52,
+      "height": 52,
+      "frame": "map"
+    },
+    "odom": {
+      "stamp": 4.3,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -4.5303177649109e-17,
+      "y": 2.2278275383111477e-29,
+      "yaw": -4.693985579642603e-18
+    },
+    "scan": {
+      "stamp": 4.3,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.11999999731779099,
+      "max": 1.0178663730621338,
+      "front": 0.11999999731779099
+    },
+    "camera": {
+      "stamp": 4.3,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    }
+  },
+  "last": {
+    "clock": 13.13,
+    "map": {
+      "stamp": 12.934,
+      "width": 54,
+      "height": 53,
+      "frame": "map"
+    },
+    "odom": {
+      "stamp": 13.12,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -2.1938406588254287e-19,
+      "y": 2.2279124108690925e-29,
+      "yaw": 7.782853849441236e-20
+    },
+    "scan": {
+      "stamp": 13.1,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.11999999731779099,
+      "max": 1.022868037223816,
+      "front": 0.11999999731779099
+    },
+    "camera": {
+      "stamp": 13.1,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    }
+  },
+  "unique_scans": 89,
+  "odom_path_m": 7.82357020821383e-16,
+  "image_processing": {
+    "opencv": "4.5.4",
+    "shape": [
+      240,
+      320,
+      3
+    ],
+    "mean_bgr": [
+      218.3340234375,
+      218.3340234375,
+      218.3340234375
+    ],
+    "saturated_pixels": 0
+  },
+  "map": {
+    "known": 1368,
+    "occupied": 263,
+    "free": 62,
+    "resolution": 0.05000000074505806,
+    "origin": [
+      -1.390330219268799,
+      -1.35
+    ]
+  },
+  "transforms": {
+    "map -> odom": {
+      "xyz": [
+        0.037237956134749506,
+        0.006605533681475292,
+        -0.068
+      ],
+      "stamp": 13.129
+    },
+    "odom -> base_footprint": {
+      "xyz": [
+        -2.1938406588254287e-19,
+        2.2279124108690925e-29,
+        0.0
+      ],
+      "stamp": 13.12
+    },
+    "base_footprint -> base_link": {
+      "xyz": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> base_scan": {
+      "xyz": [
+        -0.064,
+        0.0,
+        0.111
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_link": {
+      "xyz": [
+        0.073,
+        -0.011,
+        0.07400000000000001
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_rgb_frame": {
+      "xyz": [
+        0.079,
+        0.011,
+        0.092
+      ],
+      "stamp": 0.0
+    },
+    "map -> base_link": {
+      "xyz": [
+        0.03737746473714036,
+        -9.625538149863835e-06,
+        -0.058
+      ],
+      "stamp": 13.12
+    }
+  },
+  "errors": [],
+  "observed_real_time_factor": 0.14726328358208252
+}
+09:18:04: GL_VERSION = 2.1 Mesa 23.2.1-1ubuntu3.1~22.04.3
+09:18:04: GL_RENDERER = virgl (ANGLE (Apple, ANGLE Metal Renderer: Apple M5 Pro, Ve...)
+09:18:04: RenderSystem Name: OpenGL Rendering Subsystem
+09:18:04: Device Name: virgl (ANGLE (Apple, ANGLE Metal Renderer: Apple M5 Pro, Ve...)
+  --render-engine [arg]        Ignition Rendering engine plugin to load for     
+                               both the server and the GUI. Gazebo will use     
+                               OGRE2 by default. (ogre2)                        
+                               Make sure custom plugins are in                  
+                               IGN_GAZEBO_RENDER_ENGINE_PATH.                   
+--
+  --render-engine-gui [arg]    Ignition Rendering engine plugin to load for     
+                               the GUI. Gazebo will use OGRE2 by default.       
+                               (ogre2)                                          
+                               Make sure custom plugins are in                  
+                               IGN_GAZEBO_RENDER_ENGINE_PATH.                   
+--
+  --render-engine-server [arg] Ignition Rendering engine plugin to load for     
+                               the server. Gazebo will use OGRE2 by default.    
+                               (ogre2)                                          
+                               Make sure custom plugins are in                  
+                               IGN_GAZEBO_RENDER_ENGINE_PATH.                   

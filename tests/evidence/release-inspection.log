@@ -1,0 +1,44 @@
+Course simulation stopped.
+[sudo] password for student: STUDENT_SUDO_PASSWORD_PASS
+Linux comp3431-arm 5.15.0-153-generic #163-Ubuntu SMP Thu Aug 7 16:44:32 UTC 2025 aarch64 aarch64 aarch64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   60G   17G   41G  29% /
+               total        used        free      shared  buff/cache   available
+Mem:           5.8Gi       791Mi       3.8Gi        27Mi       1.2Gi       4.8Gi
+Swap:          3.8Gi          0B       3.8Gi
+student:x:1001:1001::/home/student:/bin/bash
+Last password change					: Sep 12, 2026
+Password expires					: never
+Password inactive					: never
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 99999
+Number of days of warning before password expires	: 7
+dynamixel_sdk	src/DynamixelSDK/ros/dynamixel_sdk	(ros.ament_cmake)
+dynamixel_sdk_custom_interfaces	src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces	(ros.ament_cmake)
+dynamixel_sdk_examples	src/DynamixelSDK/ros/dynamixel_sdk_examples	(ros.ament_cmake)
+turtlebot3	src/turtlebot3/turtlebot3	(ros.ament_cmake)
+turtlebot3_bringup	src/turtlebot3/turtlebot3_bringup	(ros.ament_cmake)
+turtlebot3_cartographer	src/turtlebot3/turtlebot3_cartographer	(ros.ament_cmake)
+turtlebot3_description	src/turtlebot3/turtlebot3_description	(ros.ament_cmake)
+turtlebot3_example	src/turtlebot3/turtlebot3_example	(ros.ament_python)
+turtlebot3_gazebo	src/navigation2_ignition_gazebo_turtlebot3/turtlebot3_gazebo	(ros.ament_cmake)
+turtlebot3_msgs	src/turtlebot3_msgs	(ros.ament_cmake)
+turtlebot3_navigation2	src/turtlebot3/turtlebot3_navigation2	(ros.ament_cmake)
+turtlebot3_node	src/turtlebot3/turtlebot3_node	(ros.ament_cmake)
+turtlebot3_teleop	src/turtlebot3/turtlebot3_teleop	(ros.ament_python)
+wall_follower	src/wall_follower	(ros.ament_cmake)
+Guest source manifest: 1757 files
+RELEASE_INSPECTION_PASS

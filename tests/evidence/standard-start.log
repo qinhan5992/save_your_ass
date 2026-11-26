@@ -1,0 +1,48 @@
+Starting mapping with standard profile. Logs: /home/student/COMP3431/logs/20260912-085959-2d1f04
+{
+  "passed": true,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "live_clock": true,
+    "live_scan": true,
+    "live_odom": true,
+    "live_camera": true,
+    "nonempty_map": true,
+    "tf_odom_base_footprint": 1,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1,
+    "tf_map_base_footprint": 1
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "image_shape": [
+      480,
+      640,
+      3
+    ],
+    "known_map_cells": 1388,
+    "message_counts": {
+      "clock": 271,
+      "odom": 14,
+      "camera": 3,
+      "scan": 3,
+      "map": 4
+    },
+    "elapsed_seconds": 5.635579660999952
+  }
+}
+Ready. The robot is stationary. Use course wall-follow or course teleop to move it.

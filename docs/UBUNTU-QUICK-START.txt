@@ -1,0 +1,24 @@
+COMP3431 — INSIDE UBUNTU
+
+Open COMP3431 Terminal from Applications, or press Ctrl-Alt-T.
+Run each command separately:
+
+  course doctor       Check the software
+  course start        Start mapping and RViz; wait for Ready
+  course wall-follow  Make the robot move
+  course stop-robot   Stop wall following
+  course stop         Stop the simulation
+
+Your code: /home/student/COMP3431/src
+Open the editor: code ~/COMP3431
+After saving edits: course stop, then course build
+Camera exercise: course stop, then course start vision
+Save a map while mapping: course save-map my-map
+
+Read START-HERE.html on this desktop for the full guide.
+On your Mac, run backup.command while Ubuntu is running to copy your work.
+Finish with course stop, back up your work, then choose Ubuntu Power Off.
+
+Initial Ubuntu username: student
+Initial Ubuntu password: comp3431
+Use your new password if you have changed it.

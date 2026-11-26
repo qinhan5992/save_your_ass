@@ -1,0 +1,6 @@
+userdel: ubuntu mail spool (/var/mail/ubuntu) not found
+student:x:1001:1001::/home/student:/bin/bash
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv   60G   17G   41G  29% /
+
+Fresh student account retained; original user home removed from this clone.

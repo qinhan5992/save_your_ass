@@ -1,0 +1,7 @@
+build/
+.course/
+config/
+install/
+log/
+logs/
+

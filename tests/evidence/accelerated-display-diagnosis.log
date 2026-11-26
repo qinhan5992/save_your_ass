@@ -1,0 +1,53 @@
+● gdm.service - GNOME Display Manager
+     Loaded: loaded (/lib/systemd/system/gdm.service; static)
+     Active: active (running) since Sat 2026-09-12 09:10:50 UTC; 39s ago
+    Process: 877 ExecStartPre=/usr/share/gdm/generate-config (code=exited, status=0/SUCCESS)
+   Main PID: 896 (gdm3)
+      Tasks: 3 (limit: 6925)
+     Memory: 5.5M
+        CPU: 37ms
+     CGroup: /system.slice/gdm.service
+             └─896 /usr/sbin/gdm3
+
+Sep 12 09:10:50 comp3431-arm systemd[1]: Starting GNOME Display Manager...
+Sep 12 09:10:50 comp3431-arm systemd[1]: Started GNOME Display Manager.
+Sep 12 09:11:00 comp3431-arm gdm-launch-environment][1093]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=130) by (uid=0)
+Sep 12 09:11:00 comp3431-arm gnome-session-binary[1117]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+Sep 12 09:11:00 comp3431-arm gnome-session-binary[1117]: GLib-GIO-CRITICAL: g_bus_get_sync: assertion 'error == NULL || *error == NULL' failed
+by-path
+card0
+renderD128
+    896 gdm3
+   1093 gdm-session-wor
+   1108 gdm-wayland-ses
+   1117 gnome-session-b
+   1125 gnome-shell
+# GDM configuration storage
+#
+# See /usr/share/gdm/gdm.schemas for a list of available options.
+
+[daemon]
+# Uncomment the line below to force the login screen to use Xorg
+#WaylandEnable=false
+
+# Enabling automatic login
+#  AutomaticLoginEnable = true
+#  AutomaticLogin = user1
+
+# Enabling timed login
+#  TimedLoginEnable = true
+#  TimedLogin = user1
+#  TimedLoginDelay = 10
+
+[security]
+
+[xdmcp]
+
+[chooser]
+
+[debug]
+# Uncomment the line below to turn on debugging
+# More verbose logs
+# Additionally lets the X server dump core if it crashes
+#Enable=true
+

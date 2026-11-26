@@ -1,0 +1,182 @@
+Course simulation stopped.
+Starting mapping with mapping profile. Logs: /home/student/COMP3431/logs/20260912-090325-c17d8a
+{
+  "passed": true,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "live_clock": true,
+    "live_scan": true,
+    "live_odom": true,
+    "nonempty_map": true,
+    "tf_odom_base_footprint": 1,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1,
+    "tf_map_base_footprint": 1
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "known_map_cells": 1391,
+    "message_counts": {
+      "clock": 218,
+      "odom": 11,
+      "scan": 3,
+      "map": 3
+    },
+    "elapsed_seconds": 3.63375969599997
+  }
+}
+Ready. The robot is stationary. Use course wall-follow or course teleop to move it.
+{
+  "label": "software-mapping",
+  "elapsed_wall_s": 60.00047346500003,
+  "counts": {
+    "clock": 6807,
+    "map": 59,
+    "odom": 340,
+    "scan": 68
+  },
+  "wall_hz": {
+    "clock": 113.44910476366016,
+    "map": 0.983325573829286,
+    "odom": 5.666621950880631,
+    "scan": 1.1333243901761263
+  },
+  "first": {
+    "clock": 0.51,
+    "map": {
+      "stamp": 0.473,
+      "width": 72,
+      "height": 40,
+      "frame": "map"
+    },
+    "odom": {
+      "stamp": 0.52,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": 2.2493385429624487e-15,
+      "y": 2.2122706236801353e-30,
+      "yaw": -6.520806153235997e-16
+    },
+    "scan": {
+      "stamp": 0.6,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.40785378217697144,
+      "max": 2.6962573528289795,
+      "front": 1.832725167274475
+    }
+  },
+  "last": {
+    "clock": 7.316,
+    "map": {
+      "stamp": 7.283,
+      "width": 72,
+      "height": 40,
+      "frame": "map"
+    },
+    "odom": {
+      "stamp": 7.3,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -2.2106673939485856e-19,
+      "y": 2.227912410851021e-29,
+      "yaw": 1.192097761967113e-19
+    },
+    "scan": {
+      "stamp": 7.3,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.40417128801345825,
+      "max": 2.6890969276428223,
+      "front": 1.834115743637085
+    }
+  },
+  "unique_scans": 68,
+  "odom_path_m": 1.2807601606709993e-13,
+  "image_processing": {},
+  "map": {
+    "known": 1406,
+    "occupied": 178,
+    "free": 0,
+    "resolution": 0.05000000074505806,
+    "origin": [
+      -0.8,
+      -1.25
+    ]
+  },
+  "transforms": {
+    "map -> odom": {
+      "xyz": [
+        0.025027825167260924,
+        -0.005207349037407779,
+        -0.068
+      ],
+      "stamp": 7.316
+    },
+    "odom -> base_footprint": {
+      "xyz": [
+        -2.2106673939485856e-19,
+        2.227912410851021e-29,
+        0.0
+      ],
+      "stamp": 7.3
+    },
+    "base_footprint -> base_link": {
+      "xyz": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> base_scan": {
+      "xyz": [
+        -0.064,
+        0.0,
+        0.111
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_link": {
+      "xyz": [
+        0.073,
+        -0.011,
+        0.07400000000000001
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_rgb_frame": {
+      "xyz": [
+        0.079,
+        0.011,
+        0.092
+      ],
+      "stamp": 0.0
+    },
+    "map -> base_link": {
+      "xyz": [
+        0.025027825167260924,
+        -0.005207349037407779,
+        -0.05800000000000001
+      ],
+      "stamp": 7.3
+    }
+  },
+  "errors": [],
+  "observed_real_time_factor": 0.11343243822851051
+}
+Course simulation stopped.

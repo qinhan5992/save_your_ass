@@ -1,0 +1,228 @@
+Starting mapping with balanced profile. Logs: /home/student/COMP3431/logs/20260912-092508-c10dfa
+{
+  "passed": true,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "graphics_context": true,
+    "live_clock": true,
+    "live_scan": true,
+    "live_odom": true,
+    "live_camera": true,
+    "nonempty_map": true,
+    "tf_odom_base_footprint": 1,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1,
+    "tf_map_base_footprint": 1
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "graphics": "name of display: :1\ndisplay: :1  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0x1af4)\n    Device: virgl (ANGLE (Apple, Apple M5 Pro, OpenGL 4.1 Metal - 90.5)) (0x1010)\n    Version: 23.2.1\n    Accelerated: yes\n    Video memory: 0MB\n    Unified memory: no\n    Preferred profile: compat (0x2)\n    Max core profile version: 0.0\n    Max compat profile version: 2.1\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.0\nOpenGL vendor string: Mesa\nOpenGL renderer string: virgl (ANGLE (Apple, Apple M5 Pro, OpenGL 4.1 Metal - 90.5))\nOpenGL version string: 2.1 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL shading language version string: 1.20\n\nOpenGL ES profile version string: OpenGL ES 3.0 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.00",
+    "image_shape": [
+      240,
+      320,
+      3
+    ],
+    "scan_min": 0.40957018733024597,
+    "scan_max": 2.702495574951172,
+    "scan_beams": 360,
+    "known_map_cells": 1367,
+    "message_counts": {
+      "clock": 241,
+      "odom": 12,
+      "camera": 3,
+      "scan": 3,
+      "map": 3
+    },
+    "elapsed_seconds": 4.499794498
+  }
+}
+Ready. The robot is stationary. Use course wall-follow or course teleop to move it.
+{
+  "beams": 360,
+  "minimum": 0.39683082699775696,
+  "maximum": 2.6960670948028564,
+  "front": 1.8158304691314697,
+  "passed": true
+}
+{
+  "label": "accelerated-rviz-software-sensors",
+  "elapsed_wall_s": 60.003345361000015,
+  "counts": {
+    "clock": 5180,
+    "map": 60,
+    "odom": 259,
+    "camera": 52,
+    "scan": 52
+  },
+  "wall_hz": {
+    "clock": 86.32851999893344,
+    "map": 0.9999442470918931,
+    "odom": 4.316425999946672,
+    "camera": 0.8666183474796407,
+    "scan": 0.8666183474796407
+  },
+  "first": {
+    "clock": 0.791,
+    "map": {
+      "stamp": 0.753,
+      "width": 72,
+      "height": 39,
+      "frame": "map"
+    },
+    "odom": {
+      "stamp": 0.8,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -4.497566776449931e-16,
+      "y": 6.177004314824635e-30,
+      "yaw": -2.1953377356728044e-17
+    },
+    "camera": {
+      "stamp": 0.8,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    },
+    "scan": {
+      "stamp": 0.8,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.4117632210254669,
+      "max": 2.707935333251953,
+      "front": 1.8260619640350342
+    }
+  },
+  "last": {
+    "clock": 5.97,
+    "map": {
+      "stamp": 5.856,
+      "width": 73,
+      "height": 40,
+      "frame": "map"
+    },
+    "odom": {
+      "stamp": 5.96,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -2.1943334503020175e-19,
+      "y": 2.2279124108713396e-29,
+      "yaw": 1.229945893637626e-19
+    },
+    "camera": {
+      "stamp": 5.9,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    },
+    "scan": {
+      "stamp": 5.9,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.4070892930030823,
+      "max": 2.694758892059326,
+      "front": 1.823061227798462
+    }
+  },
+  "unique_scans": 52,
+  "odom_path_m": 1.1631753062558763e-13,
+  "image_processing": {
+    "opencv": "4.5.4",
+    "shape": [
+      240,
+      320,
+      3
+    ],
+    "mean_bgr": [
+      210.5522265625,
+      210.5522265625,
+      210.5522265625
+    ],
+    "saturated_pixels": 0
+  },
+  "map": {
+    "known": 1403,
+    "occupied": 188,
+    "free": 0,
+    "resolution": 0.05000000074505806,
+    "origin": [
+      -0.8500000000000001,
+      -1.25
+    ]
+  },
+  "transforms": {
+    "map -> odom": {
+      "xyz": [
+        0.02525671516070116,
+        -0.00884076552315929,
+        -0.068
+      ],
+      "stamp": 5.97
+    },
+    "odom -> base_footprint": {
+      "xyz": [
+        -2.1943334503020175e-19,
+        2.2279124108713396e-29,
+        0.0
+      ],
+      "stamp": 5.96
+    },
+    "base_footprint -> base_link": {
+      "xyz": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> base_scan": {
+      "xyz": [
+        -0.064,
+        0.0,
+        0.111
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_link": {
+      "xyz": [
+        0.073,
+        -0.011,
+        0.07400000000000001
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_rgb_frame": {
+      "xyz": [
+        0.079,
+        0.011,
+        0.092
+      ],
+      "stamp": 0.0
+    },
+    "map -> base_link": {
+      "xyz": [
+        0.02525671516070116,
+        -0.00884076552315929,
+        -0.058
+      ],
+      "stamp": 5.96
+    }
+  },
+  "errors": [],
+  "observed_real_time_factor": 0.0863118542614819
+}

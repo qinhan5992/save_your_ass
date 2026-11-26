@@ -1,0 +1,5 @@
+aarch64
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+student:x:1001:1001::/home/student:/bin/bash
+/usr/bin/code
+/usr/bin/gedit

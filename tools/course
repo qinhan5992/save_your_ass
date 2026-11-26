@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+source "$HOME/COMP3431/tools/env.sh"
+exec /usr/bin/python3 "$COMP3431_HOME/tools/course.py" "$@"

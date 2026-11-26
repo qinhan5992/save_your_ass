@@ -1,0 +1,98 @@
+[INFO] [launch]: All log files can be found below /home/student/COMP3431/logs/20260912-091637-f753c4/ros/2026-09-12-09-16-37-682316-comp3431-arm-2062
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ign-1]: process started with pid [2065]
+[INFO] [parameter_bridge-2]: process started with pid [2067]
+[INFO] [robot_state_publisher-3]: process started with pid [2069]
+[INFO] [cartographer_node-4]: process started with pid [2072]
+[INFO] [cartographer_occupancy_grid_node-5]: process started with pid [2075]
+[INFO] [rviz2-6]: process started with pid [2077]
+[parameter_bridge-2] [ros_ign_bridge] is deprecated! Redirecting to use [ros_gz_bridge] instead!
+[parameter_bridge-2] 
+[cartographer_node-4] [INFO] [1789204597.821305469] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/home/student/COMP3431/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua' for 'turtlebot3_lds_2d.lua'.
+[cartographer_node-4] [INFO] [1789204597.822577176] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[cartographer_node-4] [INFO] [1789204597.822604218] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[cartographer_node-4] [INFO] [1789204597.822923895] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[cartographer_node-4] [INFO] [1789204597.822936853] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[cartographer_node-4] [INFO] [1789204597.823423910] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[cartographer_node-4] [INFO] [1789204597.823432077] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[cartographer_node-4] [INFO] [1789204597.823714003] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[cartographer_node-4] [INFO] [1789204597.823720878] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[cartographer_node-4] [INFO] [1789204597.824003387] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[cartographer_node-4] [INFO] [1789204597.824015221] [cartographer logger]: I0912 09:16:37.000000  2072 configuration_file_resolver.cc:41] Found '/opt/ros/humble/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[cartographer_node-4] [INFO] [1789204597.832691992] [cartographer logger]: I0912 09:16:37.000000  2072 map_builder_bridge.cpp:136] Added trajectory with ID '0'.
+[parameter_bridge-2] [INFO] [1789204597.840590740] [ros_gz_bridge]: Creating ROS->GZ Bridge: [/cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (ignition.msgs.Twist)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.845351222] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (ignition.msgs.Odometry) -> /odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.846719890] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (ignition.msgs.Pose_V) -> /tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.849309679] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (ignition.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.849686941] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (ignition.msgs.Model) -> /joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.850822852] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (ignition.msgs.LaserScan) -> /scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.851910136] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan/points (ignition.msgs.PointCloudPacked) -> /scan/points (sensor_msgs/msg/PointCloud2)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.853677066] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/imu (ignition.msgs.IMU) -> /imu (sensor_msgs/msg/Imu)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.854555219] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/image_raw (ignition.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[parameter_bridge-2] [INFO] [1789204597.855227698] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (ignition.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[robot_state_publisher-3] [WARN] [1789204597.884516448] [sdformat_urdf]: SDFormat link [imu_link] has a <sensor>, but URDF does not support this
+[robot_state_publisher-3] [WARN] [1789204597.884587742] [sdformat_urdf]: SDFormat link [base_scan] has a <sensor>, but URDF does not support this
+[robot_state_publisher-3] [WARN] [1789204597.884600201] [sdformat_urdf]: SDFormat link [camera_rgb_frame] has a <sensor>, but URDF does not support this
+[robot_state_publisher-3] [WARN] [1789204597.888448363] [kdl_parser]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-3] [INFO] [1789204597.888937170] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-3] [INFO] [1789204597.889097717] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-3] [INFO] [1789204597.889173636] [robot_state_publisher]: got segment base_scan
+[robot_state_publisher-3] [INFO] [1789204597.889237554] [robot_state_publisher]: got segment camera_link
+[robot_state_publisher-3] [INFO] [1789204597.889339433] [robot_state_publisher]: got segment camera_rgb_frame
+[robot_state_publisher-3] [INFO] [1789204597.889507063] [robot_state_publisher]: got segment caster_back_left_link
+[robot_state_publisher-3] [INFO] [1789204597.889665901] [robot_state_publisher]: got segment caster_back_right_link
+[robot_state_publisher-3] [INFO] [1789204597.889840573] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-3] [INFO] [1789204597.889939660] [robot_state_publisher]: got segment wheel_left_link
+[robot_state_publisher-3] [INFO] [1789204597.890005704] [robot_state_publisher]: got segment wheel_right_link
+[rviz2-6] [INFO] [1789204598.120619442] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1789204598.120732029] [rviz2]: OpenGl version: 2.1 (GLSL 1.2)
+[rviz2-6] [INFO] [1789204598.152711260] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [WARN] [1789204598.471460417] [sdformat_urdf]: SDFormat link [imu_link] has a <sensor>, but URDF does not support this
+[rviz2-6] [WARN] [1789204598.472041352] [sdformat_urdf]: SDFormat link [base_scan] has a <sensor>, but URDF does not support this
+[rviz2-6] [WARN] [1789204598.472338361] [sdformat_urdf]: SDFormat link [camera_rgb_frame] has a <sensor>, but URDF does not support this
+[ign-1] X Error of failed request:  GLXBadFBConfig
+[ign-1]   Major opcode of failed request:  152 (GLX)
+[ign-1]   Minor opcode of failed request:  0 ()
+[ign-1]   Serial number of failed request:  29
+[ign-1]   Current serial number in output stream:  29
+[ERROR] [ign-1]: process has died [pid 2065, exit code 1, cmd 'ign gazebo -r -v 2 -s /tmp/comp3431-world-j6o6cos4/maze.sdf'].
+[parameter_bridge-2] [INFO] [1789204626.933696547] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[parameter_bridge-2] [INFO] [1789204627.189091118] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-3] [INFO] [1789204627.189164238] [rclcpp]: signal_handler(signum=2)
+[INFO] [rviz2-6]: sending signal 'SIGINT' to process[rviz2-6]
+[INFO] [cartographer_occupancy_grid_node-5]: sending signal 'SIGINT' to process[cartographer_occupancy_grid_node-5]
+[INFO] [cartographer_node-4]: sending signal 'SIGINT' to process[cartographer_node-4]
+[INFO] [robot_state_publisher-3]: sending signal 'SIGINT' to process[robot_state_publisher-3]
+[INFO] [parameter_bridge-2]: sending signal 'SIGINT' to process[parameter_bridge-2]
+[cartographer_node-4] [INFO] [1789204627.189181737] [rclcpp]: signal_handler(signum=2)
+[ERROR] [cartographer_occupancy_grid_node-5]: process has died [pid 2075, exit code -2, cmd '/opt/ros/humble/lib/cartographer_ros/cartographer_occupancy_grid_node -resolution 0.05 -publish_period_sec 1.0 --ros-args -r __node:=cartographer_occupancy_grid_node --params-file /tmp/launch_params_g73ndgg9'].
+[rviz2-6] [INFO] [1789204627.190605602] [rclcpp]: signal_handler(signum=2)
+[cartographer_occupancy_grid_node-5] [INFO] [1789204627.190610227] [rclcpp]: signal_handler(signum=2)
+[rviz2-6] [INFO] [1789204627.196344102] [rclcpp]: signal_handler(signum=2)
+[cartographer_node-4] [INFO] [1789204627.196380683] [cartographer logger]: I0912 09:17:07.000000  2072 node.cpp:569] Shutdown the subscriber of [scan]
+[cartographer_node-4] [INFO] [1789204627.197929624] [rclcpp]: signal_handler(signum=2)
+[cartographer_node-4] [INFO] [1789204627.198342472] [cartographer logger]: I0912 09:17:07.000000  2072 node.cpp:569] Shutdown the subscriber of [odom]
+[cartographer_node-4] [INFO] [1789204627.198352971] [cartographer logger]: I0912 09:17:07.000000  2072 map_builder_bridge.cpp:152] Finishing trajectory with ID '0'...
+[cartographer_node-4] [INFO] [1789204627.198402884] [cartographer logger]: I0912 09:17:07.000000  2072 map_builder_bridge.cpp:161] Running final trajectory optimization...
+[robot_state_publisher-3] [INFO] [1789204627.198366512] [rclcpp]: signal_handler(signum=2)
+[cartographer_node-4] [INFO] [1789204627.198459797] [cartographer logger]: I0912 09:17:07.000000  2118 pose_graph_2d.cc:538] Remaining work items in queue: 2
+[cartographer_node-4] [INFO] [1789204627.198483004] [cartographer logger]: I0912 09:17:07.000000  2118 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-4] [INFO] [1789204627.198489712] [cartographer logger]: I0912 09:17:07.000000  2118 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-4] Count: 0
+[cartographer_node-4] [INFO] [1789204627.198495128] [cartographer logger]: I0912 09:17:07.000000  2118 pose_graph_2d.cc:538] Remaining work items in queue: 1
+[cartographer_node-4] [INFO] [1789204627.198512044] [cartographer logger]: I0912 09:17:07.000000  2118 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-4] [INFO] [1789204627.198514502] [cartographer logger]: I0912 09:17:07.000000  2118 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-4] Count: 0
+[cartographer_node-4] [INFO] [1789204627.198554833] [cartographer logger]: I0912 09:17:07.000000  2117 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-4] [INFO] [1789204627.198561332] [cartographer logger]: I0912 09:17:07.000000  2117 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-4] Count: 0
+[cartographer_node-4] [KOptimizing: Done.     
+[cartographer_node-4] [INFO] [1789204627.200333883] [cartographer logger]: I0912 09:17:07.000000  2115 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[cartographer_node-4] [INFO] [1789204627.200350924] [cartographer logger]: I0912 09:17:07.000000  2115 constraint_builder_2d.cc:292] Score histogram:
+[cartographer_node-4] Count: 0
+[cartographer_node-4] [KOptimizing: Done.     
+[INFO] [parameter_bridge-2]: process has finished cleanly [pid 2067]
+[INFO] [robot_state_publisher-3]: process has finished cleanly [pid 2069]
+[INFO] [cartographer_node-4]: process has finished cleanly [pid 2072]
+[INFO] [rviz2-6]: process has finished cleanly [pid 2077]

@@ -1,0 +1,229 @@
+RViz: focused course displays, correct marker array topic, 1000x620 window.
+Starting mapping with balanced profile. Logs: /home/student/COMP3431/logs/20260912-093015-4a0fb7
+{
+  "passed": true,
+  "checks": {
+    "architecture": true,
+    "ros_humble": true,
+    "local_simulation": true,
+    "ros2": true,
+    "colcon": true,
+    "ign": true,
+    "rviz2": true,
+    "g++": true,
+    "git": true,
+    "wall_follower": true,
+    "turtlebot3_gazebo": true,
+    "turtlebot3_cartographer": true,
+    "nav2_bringup": true,
+    "demo_nodes_cpp": true,
+    "demo_nodes_py": true,
+    "graphics_context": true,
+    "live_clock": true,
+    "live_scan": true,
+    "live_odom": true,
+    "live_camera": true,
+    "nonempty_map": true,
+    "tf_odom_base_footprint": 1,
+    "tf_base_link_base_scan": 1,
+    "tf_base_link_camera_link": 1,
+    "tf_map_base_footprint": 1
+  },
+  "details": {
+    "opencv": "4.5.4",
+    "graphics": "name of display: :1\ndisplay: :1  screen: 0\ndirect rendering: Yes\nExtended renderer info (GLX_MESA_query_renderer):\n    Vendor: Mesa (0xffffffff)\n    Device: llvmpipe (LLVM 15.0.7, 128 bits) (0xffffffff)\n    Version: 23.2.1\n    Accelerated: no\n    Video memory: 5912MB\n    Unified memory: yes\n    Preferred profile: core (0x1)\n    Max core profile version: 4.5\n    Max compat profile version: 4.5\n    Max GLES1 profile version: 1.1\n    Max GLES[23] profile version: 3.2\nMemory info (GL_ATI_meminfo):\n    VBO free memory - total: 63 MB, largest block: 63 MB\n    VBO free aux. memory - total: 4076 MB, largest block: 4076 MB\n    Texture free memory - total: 63 MB, largest block: 63 MB\n    Texture free aux. memory - total: 4076 MB, largest block: 4076 MB\n    Renderbuffer free memory - total: 63 MB, largest block: 63 MB\n    Renderbuffer free aux. memory - total: 4076 MB, largest block: 4076 MB\nMemory info (GL_NVX_gpu_memory_info):\n    Dedicated video memory: 4294468965 MB\n    Total available memory: 4294474877 MB\n    Currently available dedicated video memory: 63 MB\nOpenGL vendor string: Mesa\nOpenGL renderer string: llvmpipe (LLVM 15.0.7, 128 bits)\nOpenGL core profile version string: 4.5 (Core Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL core profile shading language version string: 4.50\nOpenGL core profile context flags: (none)\nOpenGL core profile profile mask: core profile\n\nOpenGL version string: 4.5 (Compatibility Profile) Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL shading language version string: 4.50\nOpenGL context flags: (none)\nOpenGL profile mask: compatibility profile\n\nOpenGL ES profile version string: OpenGL ES 3.2 Mesa 23.2.1-1ubuntu3.1~22.04.3\nOpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.20",
+    "image_shape": [
+      240,
+      320,
+      3
+    ],
+    "scan_min": 0.40774035453796387,
+    "scan_max": 2.7100346088409424,
+    "scan_beams": 360,
+    "known_map_cells": 1393,
+    "message_counts": {
+      "clock": 253,
+      "odom": 13,
+      "camera": 3,
+      "scan": 3,
+      "map": 4
+    },
+    "elapsed_seconds": 4.627275302000001
+  }
+}
+Ready. The robot is stationary. Use course wall-follow or course teleop to move it.
+{
+  "beams": 360,
+  "minimum": 0.41063737869262695,
+  "maximum": 2.7069921493530273,
+  "front": 1.8353756666183472,
+  "passed": true
+}
+{
+  "label": "final-balanced-stationary",
+  "elapsed_wall_s": 60.00341740100001,
+  "counts": {
+    "clock": 4557,
+    "odom": 228,
+    "map": 59,
+    "camera": 45,
+    "scan": 45
+  },
+  "wall_hz": {
+    "clock": 75.94567438627344,
+    "odom": 3.799783576930073,
+    "map": 0.9832773291178698,
+    "camera": 0.7499572849204091,
+    "scan": 0.7499572849204091
+  },
+  "first": {
+    "clock": 0.738,
+    "odom": {
+      "stamp": 0.74,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -1.686810998291621e-15,
+      "y": 6.022668186582927e-30,
+      "yaw": 2.71411227776185e-16
+    },
+    "map": {
+      "stamp": 0.684,
+      "width": 72,
+      "height": 40,
+      "frame": "map"
+    },
+    "camera": {
+      "stamp": 0.8,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    },
+    "scan": {
+      "stamp": 0.8,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.411997526884079,
+      "max": 2.7010326385498047,
+      "front": 1.8281428813934326
+    }
+  },
+  "last": {
+    "clock": 5.294,
+    "odom": {
+      "stamp": 5.28,
+      "frame": "odom",
+      "child": "base_footprint",
+      "x": -2.186935335816333e-19,
+      "y": 2.2279124108802967e-29,
+      "yaw": 1.2043458231394113e-19
+    },
+    "map": {
+      "stamp": 5.203,
+      "width": 72,
+      "height": 40,
+      "frame": "map"
+    },
+    "camera": {
+      "stamp": 5.2,
+      "frame": "camera_rgb_frame",
+      "width": 320,
+      "height": 240,
+      "encoding": "rgb8"
+    },
+    "scan": {
+      "stamp": 5.2,
+      "frame": "base_scan",
+      "beams": 360,
+      "min": 0.4104950726032257,
+      "max": 2.692775249481201,
+      "front": 1.818543791770935
+    }
+  },
+  "unique_scans": 45,
+  "odom_path_m": 1.175545831246488e-13,
+  "image_processing": {
+    "opencv": "4.5.4",
+    "shape": [
+      240,
+      320,
+      3
+    ],
+    "mean_bgr": [
+      210.55223958333335,
+      210.55223958333335,
+      210.55223958333335
+    ],
+    "saturated_pixels": 0
+  },
+  "map": {
+    "known": 1396,
+    "occupied": 186,
+    "free": 0,
+    "resolution": 0.05000000074505806,
+    "origin": [
+      -0.8,
+      -1.25
+    ]
+  },
+  "transforms": {
+    "map -> odom": {
+      "xyz": [
+        0.028776404321136425,
+        -0.007929233158611604,
+        -0.068
+      ],
+      "stamp": 5.294
+    },
+    "odom -> base_footprint": {
+      "xyz": [
+        -2.186935335816333e-19,
+        2.2279124108802967e-29,
+        0.0
+      ],
+      "stamp": 5.28
+    },
+    "base_footprint -> base_link": {
+      "xyz": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> base_scan": {
+      "xyz": [
+        -0.064,
+        0.0,
+        0.111
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_link": {
+      "xyz": [
+        0.073,
+        -0.011,
+        0.07400000000000001
+      ],
+      "stamp": 0.0
+    },
+    "base_link -> camera_rgb_frame": {
+      "xyz": [
+        0.079,
+        0.011,
+        0.092
+      ],
+      "stamp": 0.0
+    },
+    "map -> base_link": {
+      "xyz": [
+        0.028776404321136425,
+        -0.007929233158611604,
+        -0.05800000000000001
+      ],
+      "stamp": 5.28
+    }
+  },
+  "errors": [],
+  "observed_real_time_factor": 0.07592900866883075
+}
