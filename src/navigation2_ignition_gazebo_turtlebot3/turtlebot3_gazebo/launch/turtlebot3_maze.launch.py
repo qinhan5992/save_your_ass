@@ -1,4 +1,5 @@
 import os
+from uuid import uuid4
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
@@ -34,8 +35,8 @@ def generate_launch_description():
                         get_package_share_directory('turtlebot3_gazebo'),
                         "models", "turtlebot3_waffle_pi", "model.sdf"]),
                    '-allow_renaming', 'true',
-                   '-x', '-0.6',
-                   '-y', '1.5',
+                   '-x', '-0.6553677',
+                   '-y', '1.143383',
                    '-z', '0.01'],
         )
     
@@ -58,8 +59,8 @@ def generate_launch_description():
         arguments=['-file', PathJoinSubstitution([
                         get_package_share_directory('turtlebot3_gazebo'),
                         "models", "yellow_on_pink_marker","model.sdf"]),
-            '-x', '-0.7',
-            '-y', '-1.65',
+            '-x', '-0.7453677',
+            '-y', '-1.691617',
             '-z', '0.05' ]
     )
 
@@ -70,8 +71,8 @@ def generate_launch_description():
         arguments=['-file', PathJoinSubstitution([
                         get_package_share_directory('turtlebot3_gazebo'),
                         "models", "pink_on_green_marker","model.sdf"]),
-            '-x', '0.2',
-            '-y', '-1.55',
+            '-x', '0.0646323',
+            '-y', '-1.601617',
             '-z', '0.05' ]
     )
 
@@ -82,8 +83,8 @@ def generate_launch_description():
         arguments=['-file', PathJoinSubstitution([
                         get_package_share_directory('turtlebot3_gazebo'),
                         "models", "pink_on_yellow_marker","model.sdf"]),
-            '-x', '2.3',
-            '-y', '1.55',
+            '-x', '1.9546323',
+            '-y', '1.188383',
             '-z', '0.05' ]
     )
 
@@ -94,16 +95,20 @@ def generate_launch_description():
         arguments=['-file', PathJoinSubstitution([
                         get_package_share_directory('turtlebot3_gazebo'),
                         "models", "blue_on_pink_marker","model.sdf"]),
-            '-x', '-0.7',
-            '-y', '0.45',
+            '-x', '-0.7453677',
+            '-y', '0.198383',
             '-z', '0.05' ]
     )
 
     world_only = os.path.join(get_package_share_directory('turtlebot3_gazebo'), "models", "worlds", "world_only.sdf")
 
     return LaunchDescription([
+        SetEnvironmentVariable(
+            name='IGN_PARTITION',
+            value=f'comp3431-maze-{uuid4().hex}'),
         ign_resource_path,
         SetEnvironmentVariable(name='LIBGL_ALWAYS_SOFTWARE', value='1'),
+        SetEnvironmentVariable(name='LP_NUM_THREADS', value='1'),
         ignition_spawn_entity,
         ignition_spawn_world,
         spawn_marker1,

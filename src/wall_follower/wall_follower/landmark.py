@@ -9,6 +9,9 @@
 
 
 
+from collections import deque
+from statistics import median
+
 import rclpy
 from visualization_msgs.msg import Marker
 from visualization_msgs.msg import MarkerArray
@@ -45,9 +48,7 @@ class Landmark:
 
 	def __init__(self, mtype, markers):
 		self.mtype = mtype
-		self.count = 0;
-		self.sum_x = 0.0
-		self.sum_y = 0.0
+		self.recent_positions = deque(maxlen=5)
 		self.top_marker = None
 		self.bottom_marker = None
 		self.markers = markers
@@ -60,15 +61,13 @@ class Landmark:
 
 
 	def update_position(self, new_point):
-		if self.count == 0:
+		if self.top_marker is None:
 			self.add_marker()
 
-		self.count += 1
-		self.sum_x += new_point.x
-		self.sum_y += new_point.y
-
-		new_x = self.sum_x/self.count
-		new_y = self.sum_y/self.count
+		self.recent_positions.append((new_point.x, new_point.y))
+		x_samples, y_samples = zip(*self.recent_positions)
+		new_x = median(x_samples)
+		new_y = median(y_samples)
 
 		self.top_marker.pose.position.x = new_x
 		self.top_marker.pose.position.y = new_y

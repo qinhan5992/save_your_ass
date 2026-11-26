@@ -2,13 +2,13 @@
 
 # Released under GPLv3: https://www.gnu.org/licenses/gpl-3.0.html
 # Author: Claude Sammut
-# Last Modified: 2024.10.14
+# Last Modified: 2025.09.28
 
-# ROS 2 program to subscribe to real-time streaming 
+# ROS 2 program to subscribe to real-time streaming
 # video from TurtleBot3 Pi camera and find coloured landmarks.
 
 # Colour segementation and connected components example added by Claude sSammut
-	
+
 # Import the necessary libraries
 import rclpy # Python library for ROS 2
 from rclpy.node import Node # Handles the creation of nodes
@@ -26,8 +26,10 @@ from wall_follower.landmark import marker_type
 
 
 field_of_view_h = 62.2
-field_of_view_v = 48.8
-
+field_of_view_v = 48.68675
+focal_length = 530.46994  # Gazebo focal length in pixels at 640 x 480
+real_object_size = 0.1  # Height of one colour band in metres
+distance_numerator = real_object_size * focal_length
 
 class SeeMarker(Node):
 	"""
@@ -43,16 +45,16 @@ class SeeMarker(Node):
 		self.range = 0
 		self.prev_h = 0
 		self.prev_r = 0
-			
+
 		# Create the subscriber. This subscriber will receive an Image
 		# from the video_frames topic. The queue size is 10 messages.
 		self.subscription = self.create_subscription(
 			Image,
-			'/camera/image_raw', 
-			self.listener_callback, 
+			'/camera/image_raw', 	# Change to "compressed" for real robot
+			self.listener_callback,
 			10)
 		self.subscription # prevent unused variable warning
-			
+
 		# Used to convert between ROS and OpenCV images
 		self.br = CvBridge()
 
@@ -65,13 +67,13 @@ class SeeMarker(Node):
 		"""
 		# Display the message on the console
 		# self.get_logger().info('Receiving video frame')
- 
+
 		# Convert ROS Image message to OpenCV image
 		current_frame = self.br.imgmsg_to_cv2(data, 'bgra8')
 
 		# The following code is a simple example of colour segmentation
 		# and connected components analysis
-		
+
 		# Convert BGR image to HSV
 		hsv_frame = cv2.cvtColor(current_frame, cv2.COLOR_BGR2HSV)
 
@@ -85,22 +87,27 @@ class SeeMarker(Node):
 				if blob:
 					(c_x, c_y, c_h, c_d, c_a) = blob
 
-					# Check to see if the blobsa are verically aligned
+					# Check to see if the blobs are verically aligned
 					if abs(pink_x - c_x) > pink_h:
 #						print(f'pink_x = {pink_x}, pink_y = {pink_y}, h = {pink_h}')
 						continue
 
 					marker_at = PointStamped()
-					marker_at.header.stamp = self.get_clock().now().to_msg()
+					marker_at.header.stamp = data.header.stamp
 					marker_at.header.frame_id = 'camera_link'
 
+					"""
+					The next few lines are a ha   ck. Since the markers are always on the ground,
+					we don't use the "z" coordinate for position, so instead we use it to
+					store the parker type. Ugly, but it saves creating a new message type.
+					"""
 					if c_y < pink_y:	# +y is down
 #						print(c, "/ pink", f'{c_d:.2f}, {c_a:.2f}')
 						marker_at.point.z = float(marker_type.index(c + '/pink'))
 					else:
 #						print("pink / ", c, f'{p_d:.2f}, {p_a:.2f}')
 						marker_at.point.z = float(marker_type.index('pink/' + c))
-					
+
 					x, y = polar_to_cartesian(c_d, c_a)
 
 					marker_at.point.x = x
@@ -113,8 +120,9 @@ class SeeMarker(Node):
 
 
 		# Display camera image
-		cv2.imshow("camera", current_frame)	
+		cv2.imshow("camera", current_frame)
 		cv2.waitKey(1)
+
 
 
 colours = {
@@ -124,7 +132,6 @@ colours = {
 	"yellow":	((25,0,0), (32, 255, 255))
 }
 
-
 def segment(current_frame, hsv_frame, colour):
 	"""
 	Mask out everything except the specified colour
@@ -133,7 +140,7 @@ def segment(current_frame, hsv_frame, colour):
 
 	(lower, upper) = colours[colour]
 
-	# Mask out everything except pink pixels
+	# Mask out everything except pixels of colour parameter
 	mask = cv2.inRange(hsv_frame, lower, upper)
 	result = cv2.bitwise_and(current_frame, current_frame, mask=mask)
 
@@ -142,7 +149,7 @@ def segment(current_frame, hsv_frame, colour):
 
 	# Display masked image
 #	cv2.imshow("result", result)
- 
+
 	# Print statistics for each blob (connected component)
 	return get_stats(blobs, colour)
 
@@ -158,9 +165,9 @@ def get_stats(blobs, colour):
 	if numLabels == 0:
 		return None
 
-	largest = 0
+	largest = 30  #change 4 minimum area for blob
 	rval = None
-	centre = 320 # 640/2
+	centre = 320  # 640 / 2
 
 	for i in range(1, numLabels):
 		x = stats[i, cv2.CC_STAT_LEFT]
@@ -173,7 +180,14 @@ def get_stats(blobs, colour):
 
 		if area > largest:
 			largest = area
-			distance = 35.772 * pow(h, -0.859) # obtained experimentally
+			# distance = 35.772 * pow(h, -0.859) # obtained experimentally
+			distance = distance_numerator / h # https://www.baeldung.com/cs/cv-compute-distance-from-object-video
+			"""
+			The condition below accounts for when the marker is at the edge of the screen
+			and is only paritally visible. The assumption is that if the aspect ratio < 0.8
+			then it is only partially visisble.
+			We need two cases for when the marker is on the left or right edge.
+			"""
 			aspect_ratio = h/w
 			if aspect_ratio < 0.8:
 				if cx < centre:
@@ -200,13 +214,13 @@ def polar_to_cartesian(distance, angle):
 
 
 def main(args=None):
-	
+
 	# Initialize the rclpy library
 	rclpy.init(args=args)
-	
+
 	# Create the node
 	see_marker = SeeMarker()
-	
+
 	# Spin the node so the callback function is called.
 	try:
 		rclpy.spin(see_marker)
@@ -217,9 +231,9 @@ def main(args=None):
 	# (optional - otherwise it will be done automatically
 	# when the garbage collector destroys the node object)
 	see_marker.destroy_node()
-	
+
 	# Shutdown the ROS client library for Python
 	rclpy.shutdown()
-	
+
 if __name__ == '__main__':
 	main()

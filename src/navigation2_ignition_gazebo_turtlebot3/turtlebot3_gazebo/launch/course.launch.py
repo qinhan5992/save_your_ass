@@ -31,7 +31,7 @@ def launch_setup(context):
     pose = robot.find('pose')
     if pose is None:
         pose = ET.SubElement(robot, 'pose')
-    pose.text = '-0.6 1.5 0.01 0 0 0'
+    pose.text = '-0.6553677 1.143383 0.01 0 0 0'
     for link in robot.findall('link'):
         for sensor in list(link.findall('sensor')):
             if sensor.get('type') == 'camera':
@@ -47,10 +47,10 @@ def launch_setup(context):
     world.append(robot)
     for uri, pose in [
         ('worlds/turtlebot3_maze', '0 0 0 0 0 0'),
-        ('yellow_on_pink_marker', '-0.7 -1.65 0.05 0 0 0'),
-        ('pink_on_green_marker', '0.2 -1.55 0.05 0 0 0'),
-        ('pink_on_yellow_marker', '2.3 1.55 0.05 0 0 0'),
-        ('blue_on_pink_marker', '-0.7 0.45 0.05 0 0 0'),
+        ('yellow_on_pink_marker', '-0.7453677 -1.691617 0.05 0 0 0'),
+        ('pink_on_green_marker', '0.0646323 -1.601617 0.05 0 0 0'),
+        ('pink_on_yellow_marker', '1.9546323 1.188383 0.05 0 0 0'),
+        ('blue_on_pink_marker', '-0.7453677 0.198383 0.05 0 0 0'),
     ]:
         inc = ET.SubElement(world, 'include')
         ET.SubElement(inc, 'uri').text = 'model://' + uri
@@ -65,6 +65,8 @@ def launch_setup(context):
         return IncludeLaunchDescription(PythonLaunchDescriptionSource(str(Path(share(package)) / 'launch' / launch)),
                                         launch_arguments=kwargs.items())
     actions = [
+        # Keep Gazebo and its bridge on this session's transport topics.
+        SetEnvironmentVariable('IGN_PARTITION', dest.parent.name),
         SetEnvironmentVariable('IGN_GAZEBO_RESOURCE_PATH', str(models) + ':/opt/ros/humble/share'),
         ExecuteProcess(cmd=sim, output='screen', additional_env={'LIBGL_ALWAYS_SOFTWARE': '1', 'LP_NUM_THREADS': '1'}),
         include('turtlebot3_gazebo', 'ros_ign_bridge.launch.py', use_sim_time='true'),

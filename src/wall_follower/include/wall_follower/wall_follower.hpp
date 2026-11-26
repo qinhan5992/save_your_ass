@@ -18,6 +18,7 @@
 #define WALL_FOLLOWER_HPP_
 
 #include <geometry_msgs/msg/twist.hpp>
+#include <std_msgs/msg/empty.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
@@ -55,12 +56,18 @@ private:
 	// ROS topic publishers
 	rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
 
+	rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr start_pose_pub_;
+	rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr finished_pub_;
+	bool have_start_pose_ = false;
+
 	// ROS topic subscribers
 	rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
 
 	// Variables
 	double robot_pose_;
+	double current_x_ = 0.0;
+	double current_y_ = 0.0;
 	double start_x, start_y;
 	bool near_start; 
 	double scan_data_[12];

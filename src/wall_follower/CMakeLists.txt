@@ -27,6 +27,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(std_msgs REQUIRED)
 
 ################################################################################
 # Build
@@ -40,6 +41,7 @@ set(dependencies
   "rclcpp"
   "rclpy"
   "sensor_msgs"
+  "std_msgs"
   "tf2"
 )
 
@@ -69,6 +71,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/see_marker.py
   scripts/point_transformer.py
+  scripts/navigate_markers.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

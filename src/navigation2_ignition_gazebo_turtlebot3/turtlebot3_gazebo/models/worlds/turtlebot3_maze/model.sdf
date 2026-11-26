@@ -1,5 +1,6 @@
 <sdf version="1.7">
  <model name="turtlebot3_maze">
+  <static>true</static>
   <model name="enclosure">
    <model name="wall_section_00">
     <link name="link">
@@ -23,7 +24,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -49,7 +50,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -99,9 +100,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>-0.5 0 0 0 -0 0</pose>
+    <pose>-0.55 0.0 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_01">
     <link name="link">
@@ -125,7 +126,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -151,7 +152,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -201,9 +202,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>0.5 0 0 0 -0 0</pose>
+    <pose>0.35 0.0 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_02">
     <link name="link">
@@ -227,7 +228,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -253,7 +254,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -303,9 +304,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>1.5 0 0 0 -0 0</pose>
+    <pose>1.25 0.0 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_03">
     <link name="link">
@@ -329,7 +330,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -355,7 +356,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -405,9 +406,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>2.5 0 0 0 -0 0</pose>
+    <pose>2.15 0.0 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_04">
     <link name="link">
@@ -431,7 +432,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -457,7 +458,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -507,9 +508,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>3 0.5 0 0 -0 1.5708</pose>
+    <pose>2.6 0.45 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_05">
     <link name="link">
@@ -533,7 +534,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -559,7 +560,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -609,9 +610,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>3 1.5 0 0 -0 1.5708</pose>
+    <pose>2.6 1.35 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_06">
     <link name="link">
@@ -635,7 +636,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -661,7 +662,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -711,9 +712,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>3 2.5 0 0 -0 1.5708</pose>
+    <pose>2.6 2.25 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_07">
     <link name="link">
@@ -737,7 +738,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -763,7 +764,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -813,9 +814,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>3 3.5 0 0 -0 1.5708</pose>
+    <pose>2.6 3.15 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_08">
     <link name="link">
@@ -839,7 +840,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -865,7 +866,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -915,9 +916,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>2.5 4 0 0 -0 3.14159</pose>
+    <pose>2.15 3.6 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_09">
     <link name="link">
@@ -941,7 +942,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -967,7 +968,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1017,9 +1018,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>1.5 4 0 0 -0 3.14159</pose>
+    <pose>1.25 3.6 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_10">
     <link name="link">
@@ -1043,7 +1044,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -1069,7 +1070,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1119,9 +1120,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>0.5 4 0 0 -0 3.14159</pose>
+    <pose>0.35 3.6 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_11">
     <link name="link">
@@ -1145,7 +1146,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -1171,7 +1172,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1221,9 +1222,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>-0.5 4 0 0 -0 3.14159</pose>
+    <pose>-0.55 3.6 0.21 0 0 0</pose>
    </model>
    <model name="wall_section_12">
     <link name="link">
@@ -1247,7 +1248,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -1273,7 +1274,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1323,9 +1324,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>-1 3.5 0 0 0 -1.5708</pose>
+    <pose>-1.0 3.15 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_13">
     <link name="link">
@@ -1349,7 +1350,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -1375,7 +1376,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1425,9 +1426,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>-1 2.5 0 0 0 -1.5708</pose>
+    <pose>-1.0 2.25 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_14">
     <link name="link">
@@ -1451,7 +1452,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -1477,7 +1478,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1527,9 +1528,9 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>-1 1.5 0 0 0 -1.57079</pose>
+    <pose>-1.0 1.35 0.21 0 0 1.5707963267948966</pose>
    </model>
    <model name="wall_section_15">
     <link name="link">
@@ -1553,7 +1554,7 @@
      <visual name="visual">
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <material>
@@ -1579,7 +1580,7 @@
       <pose>0 0 0 0 -0 0</pose>
       <geometry>
        <box>
-        <size>1 0.01 0.42</size>
+        <size>0.9 0.01 0.42</size>
        </box>
       </geometry>
       <surface>
@@ -1629,13 +1630,13 @@
       </surface>
      </collision>
     </link>
-    <static>0</static>
+    <static>true</static>
     <allow_auto_disable>1</allow_auto_disable>
-    <pose>-1 0.5 0 0 0 -1.5708</pose>
+    <pose>-1.0 0.45 0.21 0 0 1.5707963267948966</pose>
    </model>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>-0.153677 -2.06617 0.021892 0 -0 0</pose>
+   <pose>-0.153677 -2.06617 0 0 0 0</pose>
   </model>
   <model name="wall_section">
    <link name="link">
@@ -1659,7 +1660,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -1685,7 +1686,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -1735,9 +1736,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>-0.638144 0.932565 1e-05 0 -0 0</pose>
+   <pose>-0.703677 0.63383 0.21 0 0 0</pose>
   </model>
   <model name="wall_section_0">
    <link name="link">
@@ -1761,7 +1762,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -1787,7 +1788,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -1837,9 +1838,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>0.361885 0.932594 1.2e-05 0 -0 0</pose>
+   <pose>0.196323 0.63383 0.21 0 0 0</pose>
   </model>
   <model name="wall_section_1">
    <link name="link">
@@ -1863,7 +1864,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -1889,7 +1890,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -1939,111 +1940,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>0.365577 -1.05256 0.008183 0 -0 0</pose>
-  </model>
-  <model name="wall_section_2">
-   <link name="link">
-    <inertial>
-     <mass>0.2</mass>
-     <inertia>
-      <ixx>0.0333333</ixx>
-      <ixy>0</ixy>
-      <ixz>0</ixz>
-      <iyy>0.0333333</iyy>
-      <iyz>0</iyz>
-      <izz>0.0333333</izz>
-     </inertia>
-     <pose>0 0 0 0 -0 0</pose>
-    </inertial>
-    <self_collide>0</self_collide>
-    <enable_wind>0</enable_wind>
-    <kinematic>0</kinematic>
-    <pose>0 0 0 0 -0 0</pose>
-    <gravity>1</gravity>
-    <visual name="visual">
-     <geometry>
-      <box>
-       <size>1 0.01 0.42</size>
-      </box>
-     </geometry>
-     <material>
-      <script>
-       <name>Gazebo/Grey</name>
-       <uri>file://media/materials/scripts/gazebo.material</uri>
-      </script>
-      <shader type="pixel">
-       <normal_map>__default__</normal_map>
-      </shader>
-      <ambient>0.3 0.3 0.3 1</ambient>
-      <diffuse>0.7 0.7 0.7 1</diffuse>
-      <specular>0.01 0.01 0.01 1</specular>
-      <emissive>1 1 1 1</emissive>
-     </material>
-     <pose>0 0 0 0 -0 0</pose>
-     <transparency>0</transparency>
-     <cast_shadows>1</cast_shadows>
-    </visual>
-    <collision name="collision_1">
-     <laser_retro>0</laser_retro>
-     <max_contacts>10</max_contacts>
-     <pose>0 0 0 0 -0 0</pose>
-     <geometry>
-      <box>
-       <size>1 0.01 0.42</size>
-      </box>
-     </geometry>
-     <surface>
-      <friction>
-       <ode>
-        <mu>1</mu>
-        <mu2>1</mu2>
-        <fdir1>0 0 0</fdir1>
-        <slip1>0</slip1>
-        <slip2>0</slip2>
-       </ode>
-       <torsional>
-        <coefficient>1</coefficient>
-        <patch_radius>0</patch_radius>
-        <surface_radius>0</surface_radius>
-        <use_patch_radius>1</use_patch_radius>
-        <ode>
-         <slip>0</slip>
-        </ode>
-       </torsional>
-      </friction>
-      <bounce>
-       <restitution_coefficient>0</restitution_coefficient>
-       <threshold>1e+06</threshold>
-      </bounce>
-      <contact>
-       <collide_without_contact>0</collide_without_contact>
-       <collide_without_contact_bitmask>1</collide_without_contact_bitmask>
-       <collide_bitmask>1</collide_bitmask>
-       <ode>
-        <soft_cfm>0</soft_cfm>
-        <soft_erp>0.2</soft_erp>
-        <kp>1e+13</kp>
-        <kd>1</kd>
-        <max_vel>0.01</max_vel>
-        <min_depth>0</min_depth>
-       </ode>
-       <bullet>
-        <split_impulse>1</split_impulse>
-        <split_impulse_penetration_threshold>-0.01</split_impulse_penetration_threshold>
-        <soft_cfm>0</soft_cfm>
-        <soft_erp>0.2</soft_erp>
-        <kp>1e+13</kp>
-        <kd>1</kd>
-       </bullet>
-      </contact>
-     </surface>
-    </collision>
-   </link>
-   <static>0</static>
-   <allow_auto_disable>1</allow_auto_disable>
-   <pose>1.35206 -0.075234 -1e-05 0 -0 0</pose>
+   <pose>0.196323 -1.16617 0.21 0 0 0</pose>
   </model>
   <model name="wall_section_3">
    <link name="link">
@@ -2067,7 +1966,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -2093,7 +1992,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -2143,9 +2042,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>1.8704 1.43092 -5e-06 0 0 -1.5708</pose>
+   <pose>1.546323 1.08383 0.21 0 0 1.5707963267948966</pose>
   </model>
   <model name="wall_section_3_clone">
    <link name="link">
@@ -2169,7 +2068,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -2195,7 +2094,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -2245,9 +2144,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>1.87045 0.423238 -6e-06 0 0 -1.5708</pose>
+   <pose>1.546323 0.18383 0.21 0 0 1.5707963267948966</pose>
   </model>
   <model name="wall_section_3_clone_0">
    <link name="link">
@@ -2271,7 +2170,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -2297,7 +2196,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -2347,9 +2246,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>1.84506 -1.54142 1e-05 0 0 -1.5708</pose>
+   <pose>1.546323 -1.61617 0.21 0 0 1.5707963267948966</pose>
   </model>
   <model name="wall_section_3_clone_0_clone">
    <link name="link">
@@ -2373,7 +2272,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -2399,7 +2298,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -2449,9 +2348,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>-0.648831 -0.071018 5e-06 0 -0 0</pose>
+   <pose>-0.703677 -0.26617 0.21 0 0 0</pose>
   </model>
   <model name="wall_section_3_clone_1">
    <link name="link">
@@ -2475,7 +2374,7 @@
     <visual name="visual">
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <material>
@@ -2501,7 +2400,7 @@
      <pose>0 0 0 0 -0 0</pose>
      <geometry>
       <box>
-       <size>1 0.01 0.42</size>
+       <size>0.9 0.01 0.42</size>
       </box>
      </geometry>
      <surface>
@@ -2551,9 +2450,9 @@
      </surface>
     </collision>
    </link>
-   <static>0</static>
+   <static>true</static>
    <allow_auto_disable>1</allow_auto_disable>
-   <pose>-0.13664 -1.55898 -0 0 0 -1.57079</pose>
+   <pose>-0.253677 -1.61617 0.21 0 0 1.5707963267948966</pose>
   </model>
  </model>
 </sdf>

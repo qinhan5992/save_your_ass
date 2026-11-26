@@ -1,3 +1,32 @@
-Terminal 1: ros2 launch turtlebot3_gazebo turtlebot3_maze.launch.py
-Terminal 2: ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
-Terminal 3: ros2 launch wall_follower wall_follower.launch.py
+Run `course start vision --gui` and wait for the startup checks to pass.
+Run `course wall-follow` to start moving the robot.
+Run `course stop` to close the simulation.
+
+Marker navigation
+=================
+
+Build the package with `course build` and source `install/setup.bash`
+from the workspace root.
+
+1. Run `course start vision`, followed by `course wall-follow`.
+2. Once the robot returns to the start, check the simulation log for
+   "Saved marker route". The exporter writes `marker_route.csv` and
+   `marker_route.start-map.csv` at the workspace root. A valid run needs
+   four detected marker types and the start-time map transform.
+3. Run `course save-map demo` while the mapping session is still active.
+   Keep the two CSV files with this run's `maps/demo.yaml` and `maps/demo.pgm`.
+   The main CSV has the odometry start x, y and heading in radians on line
+   one, then four marker x, y and type rows in map coordinates.
+4. Run `course stop`, then `course start navigation --map maps/demo.yaml`.
+   Place the robot at the same starting position and heading as in step 1.
+5. From the workspace root, run:
+
+   ros2 run wall_follower navigate_markers.py --ros-args \
+       -p use_sim_time:=true -p map_file:=maps/demo.yaml \
+       -p marker_file:=marker_route.csv
+
+   The node loads the specified map through Nav2, initializes localization
+   with the saved map-frame start and visits each marker in CSV order.
+   To demonstrate a different order, shuffle CSV lines 2 through 5.
+   For a hand-authored CSV, use `-p odom_matches_map:=true` only when the
+   recorded start coordinates and heading already match the saved map frame.
